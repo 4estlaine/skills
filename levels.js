@@ -57,7 +57,27 @@ var levelC6 = [['blue', 'blue', 'blue', 'blue', 'blue'],
 
 var levelSetC = [levelC0, levelC1, levelC2, levelC3, levelC4, levelC5, levelC6];
 
-var levelSets = [levelSetA, levelSetB, levelSetC];
+
+var levelD0 = [['blue', 'blue', 'blue'],];
+var levelD1 = [['blue', 'blue', 'blue', 'blue', 'blue'],
+               ['red', 'skip', 'skip', 'skip', 'red']];
+var levelD2 = [['green', 'skip', 'skip', 'skip', 'skip', 'skip', 'green'],
+               ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue']];
+var levelD3 = [['blue', 'blue', 'skip', 'blue', 'blue'],
+               ['green', 'skip', 'green', 'skip', 'green']];
+var levelD3 = [['blue', 'blue', 'blue', 'blue', 'blue'],
+               ['red', 'skip', 'skip', 'skip', 'red']];
+var levelD4 = [['red', 'blue', 'red', 'blue', 'red'],
+               ['green', 'green', 'green', 'green', 'green']];
+var levelD5 = [['red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue'],
+               ['green', 'green', 'green', 'green', 'green', 'green', 'green', 'green']];
+var levelD6 = [['red', 'red', 'skip', 'red', 'red']
+               ['blue', 'blue', 'blue', 'blue', 'blue'],
+               ['green', 'green', 'skip', 'green', 'skip']];
+
+var levelSetD = [levelD0, levelD1, levelD2, levelD3, levelD4, levelD5, levelD6];
+
+var levelSets = [levelSetA, levelSetB, levelSetC, levelSetD];
 
 function chooseLevelSet() {
     var set = Math.floor(Math.random() * (levelSets.length));
