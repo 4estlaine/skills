@@ -43,7 +43,8 @@ var levelStarted = false;
 
 var goalTopOffset = blockSeparation;
 var curLevel;
-var totalKeys = 90;
+var totalKeys = 85;
+var keyBonus = 15
 var levelKeys = 0;
 var frameNo = -1;
 
@@ -199,7 +200,7 @@ function nextLevel() {
     levelStarted = true;
     curLevel = new level(activeLevel);
     levelKeys = 0;
-    totalKeys += 10;
+    totalKeys += keyBonus;
     frameNo = -1;
     $('#next').hide();
     $('#replay').hide();
