@@ -71,9 +71,9 @@ var levelD4 = [['red', 'blue', 'red', 'blue', 'red'],
                ['green', 'green', 'green', 'green', 'green']];
 var levelD5 = [['red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue'],
                ['green', 'green', 'green', 'green', 'green', 'green', 'green', 'green']];
-var levelD6 = [['red', 'red', 'skip', 'red', 'skip', 'red', 'red'],
+var levelD6 = [['red', 'red', 'skip', 'skip', 'skip', 'red', 'red'],
                ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue'],
-               ['green', 'green', 'skip', 'skip', 'skip', 'green', 'green']];
+               ['green', 'skip', 'skip', 'skip', 'skip', 'skip', 'green']];
 
 var levelSetD = [levelD0, levelD1, levelD2, levelD3, levelD4, levelD5, levelD6];
 
