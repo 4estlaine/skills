@@ -30,8 +30,13 @@ var levelB3 = [['purple', 'purple', 'purple'],
                ['green', 'skip', 'green']];
 var levelB4 = [['red', 'red', 'red', 'red', 'red', 'red'],
                ['blue', 'skip', 'skip', 'skip', 'skip', 'blue']];
+var levelB5 = [['blue', 'blue', 'blue', 'blue', 'blue', 'blue'],
+               ['red', 'skip', 'skip', 'skip', 'skip', 'red']];
+var levelB6 = [['blue', 'blue', 'skip', 'blue', 'blue'],
+               ['green', 'skip', 'skip', 'skip', 'green'],
+               ['red', 'red', 'skip', 'red', 'red']];
 
-var levelSetB = [levelB0, levelB1, levelB2, levelB3, levelB4];
+var levelSetB = [levelB0, levelB1, levelB2, levelB3, levelB4, levelB5, levelB6];
 
 
 var levelC0 = [['blue', 'blue', 'blue'],];
