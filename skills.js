@@ -65,6 +65,7 @@ var chosen_paths = [];
 $('#replay').hide();
 $('#gameover').hide();
 $('#gameover2').hide();
+$('#path_instructions').hide();
 $('#showinstructions').hide();
 $('#hideinstructions').hide();
 
@@ -160,6 +161,7 @@ function gameOver() {
   $('#instructions').hide();
   $('#hideinstructions').hide();
   $('#showinstructions').hide();
+  $('#path_instructions').hide();
 }
 
 function gameComplete() {
@@ -173,6 +175,7 @@ function gameComplete() {
   $('#instructions').hide();
   $('#hideinstructions').hide();
   $('#showinstructions').hide();
+  $('#path_instructions').hide();
 }
 
 function keyDownHandler(e) {
@@ -205,6 +208,7 @@ function nextLevel() {
     $('#next').hide();
     $('#replay').hide();
     $('#showinstructions').show();
+    $('#path_instructions').show();
     hideInstructions();
   } else {
     gameComplete();
@@ -390,6 +394,7 @@ function Block(color, next, channel) {
       }
       if (next.isStart) {
         curLevel.begun = false;
+        $('#path_instructions').show();
       }
       this.active = false;
       this.state = [];
@@ -468,6 +473,7 @@ function StartBlock(paths) {
       this.active = false;
       curLevel.activeBlock = next;
       curLevel.begun = true;
+      $('#path_instructions').hide();
 //      updateGameArea();
     }
   }
