@@ -23,7 +23,7 @@ var levelB1 = [['red', 'red', 'red', 'red', 'red', 'red'],
                ['blue', 'skip', 'skip', 'skip', 'skip', 'blue']];
 var levelB2 = [['blue', 'blue', 'blue', 'blue', 'blue'],
                ['red', 'red', 'red', 'red', 'red'],
-               ['orange', 'skip', 'skip', 'orange']];
+               ['orange', 'skip', 'skip', 'skip', 'orange']];
 var levelB3 = [['orange', 'orange', 'blue', 'blue', 'blue'],
                ['red', 'red', 'red', 'red', 'red']];
 var levelB3 = [['purple', 'purple', 'purple'],
