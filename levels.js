@@ -18,9 +18,25 @@ var levelA8 = [['green', 'green', 'purple'],
 
 var levelSetA = [levelA0, levelA1, levelA2, levelA3, levelA4, levelA5, levelA6, levelA7];
 
-var levelSets = [levelSetA];
+var levelB0 = [['red', 'red', 'red'],];
+var levelB1 = [['red', 'red', 'red', 'red', 'red', 'red'],
+               ['blue', 'skip', 'skip', 'skip', 'skip', 'blue']];
+var levelB2 = [['blue', 'blue', 'blue', 'blue', 'blue'],
+               ['red', 'red', 'red', 'red', 'red'],
+               ['orange', 'skip', 'skip', 'orange']];
+var levelB3 = [['orange', 'orange', 'blue', 'blue', 'blue'],
+               ['red', 'red', 'red', 'red', 'red']];
+var levelB3 = [['purple', 'purple', 'purple'],
+               ['green', 'skip', 'green']];
+var levelB4 = [['red', 'red', 'red', 'red', 'red', 'red'],
+               ['blue', 'skip', 'skip', 'skip', 'skip', 'blue']];
+
+var levelSetB = [levelB0, levelB1, levelB2, levelB3, levelB4];
+
+var levelSets = [levelSetA, levelSetB];
 
 function chooseLevelSet() {
     var set = Math.floor(Math.random() * (levelSets.length));
+    console.log(set);
     return {levels: levelSets[set], set: set};
 }
