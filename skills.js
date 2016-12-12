@@ -176,7 +176,7 @@ function gameComplete() {
 }
 
 function keyDownHandler(e) {
-  if (!curLevel.complete && isActionKey(e)) {
+  if (!curLevel.complete && isActionKey(e) && curLevel.begun) {
     totalKeys--;
     levelKeys++;
   }
@@ -222,6 +222,7 @@ function replayLevel() {
 
 function level(level) {
   this.complete = false;
+  this.begun = false;
   this.meter = new Meter();
   this.score = new Score();
   this.goalBlock = new GoalBlock();
@@ -337,6 +338,7 @@ function GoalBlock() {
 function Block(color, next, channel) {
   this.active = false;
   this.isGoal = false;
+  this.isStart = false;
   this.hasSequence = true;
   this.width = blockSize;
   this.height = blockSize;
@@ -386,6 +388,9 @@ function Block(color, next, channel) {
         $('#next').show();
         //$('#replay').show();
       }
+      if (next.isStart) {
+        curLevel.begun = false;
+      }
       this.active = false;
       this.state = [];
       curLevel.activeBlock = next;
@@ -428,6 +433,7 @@ function StartBlock(paths) {
   this.active = true;
   this.hasSequence = false;
   this.isGoal = false;
+  this.isStart = true;
   this.width = blockSize;
   this.height = blockSize;
   this.next = [];
@@ -461,6 +467,7 @@ function StartBlock(paths) {
       next.active = true;
       this.active = false;
       curLevel.activeBlock = next;
+      curLevel.begun = true;
 //      updateGameArea();
     }
   }
