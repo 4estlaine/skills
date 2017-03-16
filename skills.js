@@ -1,6 +1,5 @@
 var blueSequence, redSequence, greenSequence, orangeSequence, purpleSequence;
 
-
 var goalColor = 'black';
 var startColor = 'black';
 var outlineColor = 'black';
